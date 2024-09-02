@@ -38,3 +38,10 @@ def MessageView(request, room_name, username):
         "room_name": room_name,
     }
     return render(request, 'chat/message.html', context)
+
+def ShareScreen(request):
+    return render(request, 'chat/share.html')
+
+def Meeting(request):
+    context = {}
+    return render(request, 'chat/meeting.html', context)
